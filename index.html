@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <style>
+      header {
+        background-color: #1919e6;
+        color: white;
+        padding: 15px;
+        text-align: center;
+      }
+
+      .imagen {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenidos a Mi Proyecto Web</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./about.html">Acerca de</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Introducción</h2>
+        <p>En esta web vamos a encontrar infomacion sobre <b>Juan Perez</b></p>
+        <img src="./img/image1.jpg" alt="Imagen de ejemplo 1" class="imagen" />
+        <img src="./img/image2.jpg" alt="Imagen de ejemplo 2" class="imagen" />
+      </section>
+
+      <section id="contacto" class="contacto">
+        <div class="contenedorFormulario">
+          <p>Iniciar Sesión</p>
+          <form action="/submit" method="post">
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              required
+              placeholder="Introduzca el nombre de usuario"
+              placeholder="Nombre de usuario"
+            />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              placeholder="Introduzca la contraseña"
+              placeholder="Contraseña"
+            />
+            <button>Iniciar Sesión</button>
+          </form>
+          <hr />
+          <a href="">¡No se puede iniciar sesión?</a>
+          <a href="">Regístrese para crear una cuenta nueva</a>
+        </div>
+      </section>
+
+      <footer>
+        <p>&copy; 2024 Mi Proyecto Web</p>
+      </footer>
+    </main>
+  </body>
+</html>
